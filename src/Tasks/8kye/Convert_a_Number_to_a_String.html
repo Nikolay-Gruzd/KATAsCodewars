@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--
+We need a function that can transform a number (integer) into a string.
+What ways of achieving this do you know?
+
+ 123  ==> "123"
+ 999  ==> "999"
+ -100 ==> "-100"
+
+Нам нужна функция, которая может преобразовывать число (целое число) в строку.
+Какие способы достижения этой цели вы знаете?
+-->
+<script>
+
+    let n = 234
+
+    function numberToString(num) {
+        let str1 = String(num)
+        let str2 = num.toString()
+        let str3 = num + ""
+        let str4 = `${num}`
+        let str5 = num.toFixed()
+
+        return [str1, str2, str3, str4, str5]
+    }
+
+    console.log("Исходная строка: " + numberToString(n)) // = 0
+</script>
+</body>
+</html>
