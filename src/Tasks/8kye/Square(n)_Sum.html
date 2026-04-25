@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--
+Complete the square sum function so that it squares each number
+passed into it and then sums the results together.
+
+For example, for [1, 2, 2] it should return 9 because 1^2 + 2^2 + 2^2
+
+
+Дополните функцию суммы квадратов так, чтобы она возводила в квадрат каждое
+переданное ей число, а затем суммировала результаты. Например, для [1, 2, 2]
+она должна вернуть 9
+-->
+<script>
+
+    const arrNum = [1, 2, 2]
+
+    function squareSum(numbers){
+
+        let scSum = numbers.reduce((acc, num) => acc + (num * num), 0)
+
+        return scSum
+    }
+
+    console.log("Ответ:  " + squareSum(arrNum)) // = true
+</script>
+</body>
+</html>
