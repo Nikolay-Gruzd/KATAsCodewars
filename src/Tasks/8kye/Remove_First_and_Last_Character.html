@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--
+Your goal is to write a function that removes the first and last
+characters of a string. You're given one parameter, the original string.
+
+Important: Your function should handle strings of any length ≥ 2 characters.
+For strings with exactly 2 characters, return an empty string.
+
+Requirements
+The input string will always have at least 2 characters
+For strings with exactly 2 characters, return an empty string
+For strings with 3 or more characters, remove the first and last character
+The function should handle strings containing letters, numbers, and special characters
+
+'eloquent' ==> 'loquen'
+'country'  ==> 'ountr'
+'person'   ==> 'erso'
+'ab'       ==> '' (empty string)
+'xyz'      ==> 'y'
+
+Ваша цель - написать функцию, которая удаляет первый и последний символы строки.
+Вам задан один параметр - исходная строка.
+
+Важно: ваша функция должна обрабатывать строки любой длины, превышающей 2 символа.
+Для строк, содержащих ровно 2 символа, возвращайте пустую строку.
+
+Требования
+Входная строка всегда будет содержать не менее 2 символов
+Для строк, содержащих ровно 2 символа, возвращайте пустую строку
+Для строк, содержащих 3 или более символов, удалите первый и последний символы
+Функция должна обрабатывать строки, содержащие буквы, цифры и специальные символы
+-->
+<script>
+
+    const str1 = "eloquent"
+    const str2 = "country"
+    const str3 = "person"
+    const str4 = "ab"
+    const str5 = "xyz"
+
+    function removeChar(str){
+        return str.split("").slice(1, str.length - 1).join("")
+    };
+
+    console.log(`Было: ${str1}   Стало: ` + removeChar(str1)) // = loquen
+    console.log(`Было: ${str2}   Стало: ` + removeChar(str2)) // = ountr
+    console.log(`Было: ${str3}   Стало: ` + removeChar(str3)) // = erso
+    console.log(`Было: ${str4}   Стало: ` + removeChar(str4)) // = ""
+    console.log(`Было: ${str5}   Стало: ` + removeChar(str5)) // = y
+</script>
+</body>
+</html>
