@@ -45,7 +45,8 @@ The function should handle strings containing letters, numbers, and special char
     const str5 = "xyz"
 
     function removeChar(str){
-        return str.split("").slice(1, str.length - 1).join("")
+        //return str.split("").slice(1, str.length - 1).join("")
+        return str.slice(1, str.length - 1)
     };
 
     console.log(`Было: ${str1}   Стало: ` + removeChar(str1)) // = loquen
