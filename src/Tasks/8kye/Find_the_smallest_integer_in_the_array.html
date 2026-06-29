@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--
+Given an array of integers your solution should find the smallest integer.
+
+For example:
+
+Given [34, 15, 88, 2] your solution will return 2
+Given [34, -345, -1, 100] your solution will return -345
+You can assume, for the purpose of this kata, that the supplied array will not be empty.
+----------------------
+Дана последовательность целых чисел. Ваше решение должно найти наименьшее целое число.
+
+Например:
+
+Дано [34, 15, 88, 2], ваше решение вернет 2.
+Дано [34, -345, -1, 100], ваше решение вернет -345.
+Для целей этого задания можно предположить, что предоставленная последовательность целых чисел не будет пустой.
+-->
+<script>
+
+    const arr1 = [34, 15, 88, 2]
+    const arr2 = [34, -345, -1, 100]
+
+    function findSmallestInt(arr) {
+        // let res = arr[0]
+        // arr.map(x => {
+        //     x < res ? res = x : x
+        // })
+        // return res
+
+        return Math.min(...arr)
+    }
+
+    console.log("Ответ:  " + findSmallestInt(arr1)) // = 2
+    console.log("Ответ:  " + findSmallestInt(arr2)) // = -345
+</script>
+</body>
+</html>
