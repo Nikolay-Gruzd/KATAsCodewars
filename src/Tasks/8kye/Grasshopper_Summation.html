@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--
+Write a program that finds the summation of every number from 1 to num (both inclusive).
+The number will always be a positive integer greater than 0. Your function only needs to return the result,
+what is shown between parentheses in the example below is how you reach that result and it's not part of it,
+see the sample tests.
+
+Напишите программу, которая находит сумму всех чисел от 1 до num (включительно).
+Число всегда будет положительным целым числом больше 0. Ваша функция должна возвращать только результат.
+То, что показано в скобках в примере ниже, — это способ получения этого результата, и это не является его частью.
+См. примеры тестов.
+
+2 -> 3 (1 + 2)
+8 -> 36 (1 + 2 + 3 + 4 + 5 + 6 + 7 + 8)
+-->
+<script>
+
+    const num2 = 2
+    const num8 = 8
+    let sum = 0
+
+    function summationN(num) {
+        // let arr = Array.from({length: num}, (_, i) => i + 1)
+        // sum = arr.reduce((a, c) => a + c, 0)
+
+        for (let i = 1; i <= num; i++) {
+            sum += i
+        }
+        return sum
+    }
+
+    console.log("Ответ:  " + summationN(num2)) // = 3
+    console.log("Ответ:  " + summationN(num8)) // = 36
+</script>
+</body>
+</html>
