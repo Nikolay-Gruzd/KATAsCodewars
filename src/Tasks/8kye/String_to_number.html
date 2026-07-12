@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--
+Note: This kata is inspired by Convert a Number to a String!. Try that one too.
+
+Description
+We need a function that can transform a string into a number. What ways of achieving this do you know?
+
+Note: Don't worry, all inputs will be strings, and every string is a perfectly valid representation of an integral number.
+
+Examples
+"1234" ==> 1234
+"605"  ==> 605
+"1405" ==> 1405
+"-7" ==> -7
+
+Примечание: Эта задача вдохновлена задачей «Преобразовать число в строку!». Попробуйте и её тоже.
+
+Описание
+Нам нужна функция, которая может преобразовать строку в число. Какие способы достижения этой цели вы знаете?
+
+Примечание: Не беспокойтесь, все входные данные будут строками, и каждая строка является вполне допустимым представлением целого числа.
+-->
+<script>
+    let num1 = '1234'
+    let num2 = '605'
+    let num3 = '1405'
+    let num4 = '-7.4'
+
+    function stringToNumber(str) {
+        parseInt(str) // Только для целых чисел
+        parseFloat(str)
+        // str * 1
+        // +str
+        return Number(str)
+    }
+
+    console.log("Ответ:  " + stringToNumber(num1)) // = 1234
+    console.log("Ответ:  " + stringToNumber(num2)) // = 605
+    console.log("Ответ:  " + stringToNumber(num3)) // = 1405
+    console.log("Ответ:  " + stringToNumber(num4)) // = -7
+</script>
+</body>
+</html>
