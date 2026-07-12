@@ -6,46 +6,44 @@
 </head>
 <body>
 <!--
-Consider an array/list of sheep where some sheep may be missing from their place.
-We need a function that counts the number of sheep present in the array (true means present).
+Note: This kata is inspired by Convert a Number to a String!. Try that one too.
 
-For example,
+Description
+We need a function that can transform a string into a number. What ways of achieving this do you know?
 
-[true,  true,  true,  false,
-  true,  true,  true,  true ,
-  true,  false, true,  false,
-  true,  false, false, true ,
-  true,  true,  true,  true ,
-  false, false, true,  true]
+Note: Don't worry, all inputs will be strings, and every string is a perfectly valid representation of an integral number.
 
-The correct answer would be 17.
+Examples
+"1234" ==> 1234
+"605"  ==> 605
+"1405" ==> 1405
+"-7" ==> -7
 
-Hint: Don't forget to check for bad values like null/undefined
+Примечание: Эта задача вдохновлена задачей «Преобразовать число в строку!». Попробуйте и её тоже.
 
-Рассмотрим массив/список овец, в котором некоторые овцы могут отсутствовать на своих местах.
-Нам нужна функция, которая подсчитывает количество овец, присутствующих в массиве (true означает присутствие).
+Описание
+Нам нужна функция, которая может преобразовать строку в число. Какие способы достижения этой цели вы знаете?
 
-Подсказка: Не забудьте проверить наличие некорректных значений, таких как null/undefined.
+Примечание: Не беспокойтесь, все входные данные будут строками, и каждая строка является вполне допустимым представлением целого числа.
 -->
 <script>
+    let num1 = '1234'
+    let num2 = '605'
+    let num3 = '1405'
+    let num4 = '-7.4'
 
-    const sheeps = [
-        true,  undefined,  null,  false,
-        true,  true,  true,  true ,
-        true,  false, true,  false,
-        true,  false, false, true ,
-        true,  true,  true,  true ,
-        false, false, true,  true
-    ]
-
-    function countSheeps(sheeps) {
-        let count = 0
-        sheeps.map(s => s === true ? count+=1 : s)
-        return count
-        // return sheeps.filter(Boolean).length;
+    function stringToNumber(str) {
+        parseInt(str) // Только для целых чисел
+        parseFloat(str)
+        // str * 1
+        // +str
+        return Number(str)
     }
 
-    console.log("Ответ:  " + countSheeps(sheeps)) // = 15
+    console.log("Ответ:  " + stringToNumber(num1)) // = 1234
+    console.log("Ответ:  " + stringToNumber(num2)) // = 605
+    console.log("Ответ:  " + stringToNumber(num3)) // = 1405
+    console.log("Ответ:  " + stringToNumber(num4)) // = -7
 </script>
 </body>
 </html>
