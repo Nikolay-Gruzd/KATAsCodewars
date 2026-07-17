@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--
+Your task is to create a function that does four basic mathematical operations.
+
+The function should take three arguments - operation(string/char), value1(number), value2(number).
+The function should return result of numbers after applying the chosen operation.
+
+Examples(Operator, value1, value2) ==> output
+('+', 4, 7) ==> 11
+('-', 15, 18) ==> -3
+('*', 5, 5) ==> 25
+('/', 49, 7) ==> 7
+
+Ваша задача — создать функцию, выполняющую четыре основные математические операции.
+
+Функция должна принимать три аргумента: операция (строка/символ), значение 1 (число), значение 2 (число).
+Функция должна возвращать результат в виде чисел после применения выбранной операции.
+-->
+<script>
+
+    function basicOp(operation, value1, value2){
+        switch (operation) {
+            case '+': return value1 + value2
+            case '-': return value1 - value2
+            case '*': return value1 * value2
+            case '/': return value2 === 0 ? 'Cannot divide by zero' : value1 / value2
+            default: return 'Invalid operation'
+        }
+    }
+
+    console.log("Ответ:  " + basicOp('+', 4, 7)) // = 11
+    console.log("Ответ:  " + basicOp('-', 15, 18)) // = -3
+    console.log("Ответ:  " + basicOp('*', 5, 5)) // = 25
+    console.log("Ответ:  " + basicOp('/', 49, 7)) // = 7
+</script>
+</body>
+</html>
