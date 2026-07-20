@@ -26,7 +26,9 @@ patrick feeney => P.F
     const name2 = 'patrick feeney'
 
     function abbrevName(name) {
-        return name
+        // const  [firstName, lastName] = name.split(' ')
+        // return `${firstName[0]}.${lastName[0]}`.toUpperCase()
+        return name.split(' ').map(word => word[0]).join('.').toUpperCase()
     }
 
     console.log("Ответ:  " + abbrevName(name1)) // = S.H
