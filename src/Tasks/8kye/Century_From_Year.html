@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--
+Introduction
+The first century spans from the year 1 up to and including the year 100,
+the second century - from the year 101 up to and including the year 200, etc.
+
+Task
+Given a year, return the century it is in.
+
+Examples
+1705 ==> 18
+1900 ==> 19
+1601 ==> 17
+2000 ==> 20
+2742 ==> 28
+
+Введение
+Первое столетие охватывает период с 1-го года до 100-го года включительно,
+второе столетие — с 101-го года до 200-го года включительно и т. д.
+
+Задание
+Дано название года, укажите столетие, к которому он относится.
+-->
+<script>
+
+    const year1 = 1705
+    const year2 = 1900
+    const year3 = 1601
+    const year4 = 2000
+    const year5 = 2742
+
+    function century(year) {
+        return Math.ceil(year / 100)
+    }
+
+    console.log("Ответ:  " + century(year1)) // = 0
+    console.log("Ответ:  " + century(year2)) // = 0
+    console.log("Ответ:  " + century(year3)) // = 0
+    console.log("Ответ:  " + century(year4)) // = 0
+    console.log("Ответ:  " + century(year5)) // = 0
+</script>
+</body>
+</html>
