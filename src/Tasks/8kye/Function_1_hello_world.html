@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--
+Make a simple function called greet that returns the most-famous "hello world!".
+
+Style Points
+Sure, this is about as easy as it gets. But how clever can you be to create the most creative
+"hello world" you can think of? What is a "hello world" solution you would want to show your friends?
+
+Создайте простую функцию с именем greet, которая возвращает самый известный пример «hello world!».
+
+Пункты стиля
+Конечно, это максимально просто. Но насколько изобретательным вы сможете создать самый креативный пример
+«hello world», который только можете придумать? Какое решение «hello world» вы бы хотели показать своим друзьям?
+-->
+<script>
+
+    const greeting = "Hello World"
+
+    let value = greeting.toLowerCase();
+
+    if (!greeting.includes('!')) {
+        value = value + '!'
+    }
+
+    function greet() {
+        return value
+    }
+
+    console.log("Ответ:  " + greet()) // = 0
+</script>
+</body>
+</html>
