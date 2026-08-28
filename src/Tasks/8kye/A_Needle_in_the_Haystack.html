@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--
+Can you find the needle in the haystack?
+
+Write a function findNeedle() that takes an array full of junk but containing one "needle"
+
+After your function finds the needle it should return a message (as a string) that says:
+
+"found the needle at position " plus the index it found the needle, so:
+
+Example(Input ==> Output)
+
+["hay", "junk", "hay", "hay", "moreJunk", "needle", "randomJunk"] ==> "found the needle at position 5"
+Note: In COBOL, it should return "found the needle at position 6"
+
+---------------------
+
+Сможете ли вы найти иголку в стоге сена?
+
+Напишите функцию findNeedle(), которая принимает массив, полный мусора, но содержащий одну «иголку».
+
+После того, как ваша функция найдет иголку, она должна вернуть сообщение (в виде строки), которое гласит:
+
+"иголка найдена в позиции " + индекс, в котором она найдена, например:
+
+Пример (Вход ==> Выход)
+
+["сено", "мусор", "сено", "сено", "больше мусора", "иголка", "случайный мусор"] ==> "иголка найдена в позиции 5"
+Примечание: В COBOL она должна вернуть "иголка найдена в позиции 6"
+-->
+<script>
+
+    const arr = ["hay", "junk", "hay", "hay", "moreJunk", "needle", "randomJunk"]
+
+    function findNeedle(haystack) {
+        return `found the needle at position ${haystack.findIndex(f => f === 'needle')}`
+    }
+
+    console.log("Ответ:  " + findNeedle(arr)) // = иголка найдена в позиции index 5
+</script>
+</body>
+</html>
