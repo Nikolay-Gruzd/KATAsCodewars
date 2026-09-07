@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--
+There was a test in your class and you passed it. Congratulations!
+
+But you're an ambitious person. You want to know if you're better than the average student in your class.
+
+You receive an array with your peers' test scores. Now calculate the average and compare your score!
+
+Return true if you're better, else false!
+
+Note:
+Your points are not included in the array of your class's points. Do not forget them when calculating the average score!
+
+---------------------
+
+В вашем классе был тест, и вы его сдали. Поздравляем!
+
+Но вы амбициозный человек. Вы хотите узнать, лучше ли вы, чем средний ученик в вашем классе.
+
+Вы получаете массив с результатами тестов ваших одноклассников. Теперь рассчитайте средний балл и сравните его со своим!
+
+Верните true, если вы лучше, иначе false!
+
+Примечание:
+Ваши баллы не включены в массив баллов вашего класса. Не забудьте их при расчете среднего балла!
+-->
+<script>
+
+    const cP = [3, 5, 4, 3]
+    const yP = 4
+
+    function betterThanAverage(classPoints, yourPoints) {
+        // let avg = yourPoints
+        // classPoints.forEach(p => avg += p)
+        // return yourPoints > avg / (classPoints.length + 1)
+        return yourPoints > classPoints.reduce((acc, x) => acc + x, yourPoints) / (classPoints.length + 1)
+    }
+
+    console.log("Ответ:  " + betterThanAverage(cP, yP))
+</script>
+</body>
+</html>
