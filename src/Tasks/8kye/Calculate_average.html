@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--
+Write a function which calculates the average of the numbers in a given array.
+
+Note: Empty arrays should return 0.
+---------------------
+
+Напишите функцию, которая вычисляет среднее арифметическое чисел в заданном массиве.
+
+Примечание: пустые массивы должны возвращать 0.
+-->
+<script>
+
+    const arr = [1, 2, 3, 4, 5];
+
+    function findAverage(array) {
+        return array.length > 0
+            ? array.reduce((a, b) => a + b, 0) / array.length
+            : 0;
+    }
+
+    console.log("Ответ:  " + findAverage(arr))
+</script>
+</body>
+</html>
