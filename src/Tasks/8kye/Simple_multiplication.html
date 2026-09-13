@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--
+This kata is about multiplying a given number by eight if it is an even number and by nine otherwise.
+
+---------------------
+
+В этой задаче (ката) требуется умножить заданное число на 8, если оно чётное, и на 9, если нечётное.
+-->
+<script>
+
+    function simpleMultiplication(number) {
+        return number % 2 > 0 ? number * 9 : number * 8
+    }
+
+    console.log("Ответ:  " + simpleMultiplication(2))
+    console.log("Ответ:  " + simpleMultiplication(3))
+</script>
+</body>
+</html>
