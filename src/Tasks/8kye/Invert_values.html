@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--
+Given a set of numbers, return the additive inverse of each. Each positive becomes negatives, and the negatives become
+positives.
+
+[1, 2, 3, 4, 5] ==> [-1, -2, -3, -4, -5]
+[1, -2, 3, -4, 5] ==> [-1, 2, -3, 4, -5]
+[] => []
+You can assume that all values are integers. Do not mutate the input array.
+
+---------------------
+
+Для заданного набора чисел верните число, противоположное каждому из них по знаку (аддитивно-обратное). Положительные
+числа становятся отрицательными, а отрицательные — положительными.
+
+[1, 2, 3, 4, 5] ==> [-1, -2, -3, -4, -5]
+[1, -2, 3, -4, 5] ==> [-1, 2, -3, 4, -5]
+[] => []
+Можно считать, что все значения — целые числа. Не изменяйте исходный массив.
+-->
+<script>
+
+    const arr1 = [1, 2, 3, 4, 5]
+    const arr2 = [1, -2, 3, -4, 5]
+
+    function invert(array) {
+        // return array.map(item => item * -1)
+        return array.map(item => -item)
+    }
+
+    console.log("Ответ:  " + invert(arr1))
+    console.log("Ответ:  " + invert(arr2))
+</script>
+</body>
+</html>
