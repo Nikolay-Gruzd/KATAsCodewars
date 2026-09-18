@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--
+You will be given an array a and a value x. All you need to do is check whether the provided array contains the value.
+
+a can contain numbers or strings. x can be either.
+
+Return true if the array contains the value, false if not.
+
+---------------------
+
+Вам будут даны массив `a` и значение `x`. Нужно лишь проверить, содержится ли это значение в массиве.
+
+Массив `a` может содержать числа или строки; `x` также может быть числом или строкой.
+
+Верните `true`, если массив содержит это значение, и `false`, если нет.
+-->
+<script>
+
+    const arr = ["hay", "junk", "hay", "hay", 1, "needle", "randomJunk"]
+
+    function check(a, x) {
+        return a.includes(x)
+    }
+
+    console.log("Ответ:  " + check(arr, "hay"))
+    console.log("Ответ:  " + check(arr, "1"))
+    console.log("Ответ:  " + check(arr, 1))
+</script>
+</body>
+</html>
