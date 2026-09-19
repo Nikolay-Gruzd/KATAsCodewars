@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--
+Given a string of digits, you should replace any digit below 5 with '0' and any digit 5 and above with '1'.
+Return the resulting string.
+
+Note: input will never be an empty string
+
+---------------------
+
+Дана строка из цифр; необходимо заменить каждую цифру меньше 5 на «0», а цифру 5 и больше — на «1».
+Верните полученную строку.
+
+Примечание: входная строка никогда не будет пустой.
+-->
+<script>
+
+    const strNum = '123456789100'
+
+    function fakeBin(x){
+        return x.split('').map(el => el < 5 ? 0 : 1).join('')
+    }
+
+    console.log("Ответ:  " + fakeBin(strNum))
+</script>
+</body>
+</html>
