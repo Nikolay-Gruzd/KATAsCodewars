@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--
+Given a non-empty array of integers, return the result of multiplying the values together in order. Example:
+
+[1, 2, 3, 4] => 1 * 2 * 3 * 4 = 24
+
+---------------------
+
+Для заданного непустого массива целых чисел верните результат последовательного перемножения его элементов. Пример:
+
+[1, 2, 3, 4] => 1 * 2 * 3 * 4 = 24
+-->
+<script>
+
+    const arr = [1, 2, 3, 4]
+
+    function grow(x){
+        // let mult = 1
+        // for (let i = 0; i < x.length; i++) {
+        //     mult = mult * x[i]
+        // }
+
+        // x.forEach( el => mult *= el)
+
+        // return mult
+        return x.reduce((a,b) => a * b)
+    }
+
+    console.log("Ответ:  " + grow(arr))
+</script>
+</body>
+</html>
