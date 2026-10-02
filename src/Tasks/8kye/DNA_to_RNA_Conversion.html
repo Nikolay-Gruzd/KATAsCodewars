@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--
+Deoxyribonucleic acid, DNA is the primary information storage molecule in biological systems. It is composed of four
+ nucleic acid bases Guanine ('G'), Cytosine ('C'), Adenine ('A'), and Thymine ('T').
+
+Ribonucleic acid, RNA, is the primary messenger molecule in cells. RNA differs slightly from DNA its chemical structure
+ and contains no Thymine. In RNA Thymine is replaced by another nucleic acid Uracil ('U').
+
+Create a function which translates a given DNA string into RNA.
+
+For example:
+
+"GCAT"  =>  "GCAU"
+The input string can be of arbitrary length - in particular, it may be empty. All input is guaranteed to be valid,
+ i.e. each input string will only ever consist of 'G', 'C', 'A' and/or 'T'.
+
+---------------------
+
+Дезоксирибонуклеиновая кислота (ДНК) — это основная молекула для хранения информации в биологических системах.
+Она состоит из четырех азотистых оснований: гуанина («G»), цитозина («C»), аденина («A») и тимина («T»).
+
+Рибонуклеиновая кислота (РНК) — это основная молекула-переносчик информации в клетках. РНК немного отличается от ДНК
+по химическому строению и не содержит тимина. В РНК тимин заменен другим азотистым основанием — урацилом («U»).
+
+Напишите функцию, которая преобразует заданную строку ДНК в РНК.
+
+Например:
+
+"GCAT"  =>  "GCAU"
+
+Входная строка может иметь произвольную длину — в частности, она может быть пустой. Гарантируется, что входные данные
+корректны: каждая строка состоит только из символов «G», «C», «A» и/или «T».
+-->
+<script>
+
+    function DNAtoRNA(dna) {
+        // return dna.split('').map( d => d === 'T' ? 'U' : d ).join('');
+        // return [...dna].map( d => d === 'T' ? 'U' : d ).join('');
+        // return dna.replace(/T/g, 'U');
+        // return dna.replaceAll('T', 'U');
+        return dna.split("T").join("U");
+    }
+
+    console.log("Ответ:  " + DNAtoRNA("TTTT"))
+    console.log("Ответ:  " + DNAtoRNA("GCAT"))
+    console.log("Ответ:  " + DNAtoRNA("GACCGCCGCC"))
+</script>
+</body>
+</html>
