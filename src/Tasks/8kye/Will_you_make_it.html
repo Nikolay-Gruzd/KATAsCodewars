@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--
+You were camping with your friends far away from home, but when it's time to go back, you realize that your fuel
+is running out and the nearest pump is 50 miles away! You know that on average, your car runs on about 25 miles
+per gallon. There are 2 gallons left.
+
+Considering these factors, write a function that tells you if it is possible to get to the pump or not.
+
+Function should return true if it is possible and false if not.
+
+---------------------
+
+Вы отдыхали с друзьями вдали от дома, но пришло время возвращаться — и тут выяснилось, что топливо на исходе,
+а до ближайшей заправки 50 миль! Вы знаете, что в среднем ваш автомобиль расходует один галлон топлива на 25 миль пути.
+В баке осталось 2 галлона.
+
+На основе этих данных напишите функцию, которая определяет, удастся ли вам добраться до заправки.
+
+Функция должна возвращать `true`, если это возможно, и `false` — в противном случае.
+-->
+<script>
+
+    const zeroFuel = (distanceToPump, mpg, fuelLeft) => {
+        return mpg * fuelLeft >= distanceToPump
+    };
+
+    console.log("Ответ:  " + zeroFuel(50, 25, 2))
+    console.log("Ответ:  " + zeroFuel(100, 50, 3))
+</script>
+</body>
+</html>
