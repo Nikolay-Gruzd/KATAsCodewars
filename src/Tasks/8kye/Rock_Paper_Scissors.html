@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--
+Rules of the "Rock, Paper, Scissors" game are:
+
+Rock beats Scissors,
+Scissors beat Paper,
+Paper beats Rock,
+Two identical moves are a draw.
+Let's play! You will be given valid moves of two Rock, Paper, Scissors players, and have to return which player won:
+"Player 1 won!" for player 1, and "Player 2 won!" for player 2. In case of a draw return Draw!.
+
+Examples:
+"scissors",     "paper"     ==> "Player 1 won!"
+"scissors",     "rock"      ==> "Player 2 won!"
+"paper",        "paper"     ==> "Draw!"
+
+---------------------
+
+Правила игры «Камень, ножницы, бумага» таковы:
+
+Камень побеждает ножницы,
+Ножницы побеждают бумагу,
+Бумага побеждает камень,
+Если оба игрока выбрали одинаковый вариант — объявляется ничья.
+Давайте сыграем! Вам будут предложены ходы двух игроков в «Камень, ножницы, бумагу». Нужно определить, кто победил:
+если выиграл первый игрок — верните «Player 1 won!», если второй — «Player 2 won!». В случае ничьей верните «Draw!».
+
+Примеры:
+"scissors",     "paper"     ==> "Player 1 won!"
+"scissors",     "rock"      ==> "Player 2 won!"
+"paper",        "paper"     ==> "Draw!"
+-->
+<script>
+
+    const rps = (p1, p2) => {
+        let winer
+        const rules = {rock: 'scissors', paper: 'rock', scissors: 'paper'}
+        if (p1 === p2) {
+            return 'Draw!'
+        }
+        if (p2 === rules[p1]) {
+            winer = 1
+        } else winer = 2
+
+        return `Player ${winer} won!`
+    };
+
+    console.log("Ответ:  " + rps('scissors', 'paper'))
+</script>
+</body>
+</html>
