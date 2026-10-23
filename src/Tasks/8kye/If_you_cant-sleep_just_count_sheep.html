@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--
+If you can't sleep, just count sheeps!!
+
+Task:
+Given a non-negative integer, 3 for example, return a string with a murmur: "1 sheep...2 sheep...3 sheep...".
+Input will always be valid, i.e. no negative integers.
+
+---------------------
+
+Если не можешь уснуть — просто посчитай овечек!
+
+Задача:
+На вход подается неотрицательное целое число (например, 3). Нужно вернуть строку вида: «1 sheep...2 sheep...3 sheep...».
+На вход всегда будут поступать корректные данные (отрицательных чисел не будет).
+-->
+<script>
+
+    const countSheep = function (num) {
+        let count = ""
+        for (let i = 1; i <= num; i++) {
+            count = count + `${i} sheep...`
+        }
+        return count
+    }
+
+    console.log("Ответ:  " + countSheep(2))
+    console.log("Ответ:  " + countSheep(5))
+</script>
+</body>
+</html>
