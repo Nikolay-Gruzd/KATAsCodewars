@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--
+Write a function to split a string of space-separated words and convert it into an array of words. Words in the input
+will be separated by exactly one space. The input will not have leading or trailing spaces. A "word" is any contiguous
+sequence of characters that does not contain any space.
+
+Examples (Input ==> Output):
+"string" ==> ["string"]
+"Robin Singh" ==> ["Robin", "Singh"]
+"I love arrays they are my favorite" ==> ["I", "love", "arrays", "they", "are", "my", "favorite"]
+
+---------------------
+
+Напишите функцию, которая разделяет строку, состоящую из слов, разделенных пробелами, и преобразует её в массив слов.
+Слова во входной строке разделены ровно одним пробелом. В начале и конце строки пробелы отсутствуют.
+«Слово» — это любая непрерывная последовательность символов, не содержащая пробелов.
+
+Примеры (Входные данные ==> Результат):
+"string" ==> ["string"]
+"Robin Singh" ==> ["Robin", "Singh"]
+"I love arrays they are my favorite" ==> ["I", "love", "arrays", "they", "are", "my", "favorite"]
+-->
+<script>
+
+    function stringToArray(string){
+        return string.split(' ')
+    }
+
+    console.log("Ответ:  " + stringToArray("string"))
+    console.log("Ответ:  " + stringToArray("Robin Singh"))
+    console.log("Ответ:  " + stringToArray("I love arrays they are my favorite"))
+</script>
+</body>
+</html>
