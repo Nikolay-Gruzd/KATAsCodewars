@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--
+Complete the solution so that it reverses all of the words within the string passed in.
+
+Words are separated by exactly one space and there are no leading or trailing spaces.
+
+Example(Input ==> Output): "The greatest victory is that which requires no battle" ==>
+"battle no requires which that is victory greatest The"
+
+---------------------
+
+Доработайте решение так, чтобы оно меняло порядок всех слов в переданной строке на обратный.
+
+Слова разделены ровно одним пробелом; в начале и в конце строки пробелы отсутствуют.
+
+Пример (входные данные ==> результат): "The greatest victory is that which requires no battle" ==>
+"battle no requires which that is victory greatest The"
+-->
+<script>
+
+    const str = "The greatest victory is that which requires no battle"
+
+    function reverseWords(str){
+        return str.split(' ').reverse().join(' ')
+    }
+
+    console.log("Ответ:  " + reverseWords(str))
+</script>
+</body>
+</html>
