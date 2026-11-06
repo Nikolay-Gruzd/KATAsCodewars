@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--
+Create a function that gives a personalized greeting. This function takes two parameters: name and owner.
+
+Use conditionals to return the proper message:
+
+case	return
+name equals owner	'Hello boss'
+otherwise	'Hello guest'
+
+---------------------
+
+Создайте функцию, которая выдает персональное приветствие. Эта функция принимает два параметра:
+name (имя) и owner (владелец).
+
+Используйте условные конструкции, чтобы возвращать соответствующее сообщение:
+
+условие	результат
+name совпадает с owner	'Hello boss'
+в противном случае	'Hello guest'
+-->
+<script>
+
+    function greet (name, owner) {
+        return `Hello ${owner === name ? 'boss' : 'guest'}`
+    }
+
+    console.log("Ответ:  " + greet('Daniel', 'Daniel'))
+    console.log("Ответ:  " + greet('Greg', 'Daniel'))
+</script>
+</body>
+</html>
