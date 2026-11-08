@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--
+After a hard quarter in the office you decide to get some rest on a vacation. So you will book a flight for you and
+your girlfriend and try to leave all the mess behind you.
+
+You will need a rental car in order for you to get around in your vacation. The manager of the car rental makes you
+some good offers.
+
+Every day you rent the car costs $40. If you rent the car for 7 or more days, you get $50 off your total.
+Alternatively, if you rent the car for 3 or more days, you get $20 off your total.
+
+Write a code that gives out the total amount for different days(d).
+
+---------------------
+
+После тяжелого квартала в офисе вы решаете отдохнуть в отпуске. Вы бронируете авиабилеты для себя и своей девушки,
+надеясь оставить все проблемы позади.
+
+Чтобы было удобнее передвигаться во время отдыха, вам понадобится арендованный автомобиль.
+Менеджер прокатной компании предлагает вам выгодные условия.
+
+Стоимость аренды составляет 40 долларов в день. Если вы берете машину на 7 или более дней, то получаете скидку
+50 долларов от общей суммы. Если же срок аренды составляет от 3 до 6 дней, предоставляется скидка 20 долларов.
+
+Напишите код, который рассчитывает итоговую стоимость аренды в зависимости от количества дней (d).
+-->
+<script>
+
+    function rentalCarCost(d) {
+        // if ( d >= 7) {
+        //     return d * 40 - 50
+        // }
+        // if ( d >= 3) {
+        //     return d * 40 - 20
+        // }
+        // return d * 40
+        const price = d * 40;
+        return d >= 7 ? price - 50 : d >= 3 ? price - 20 : price;
+    }
+
+    console.log("Ответ:  " + rentalCarCost(1))
+    console.log("Ответ:  " + rentalCarCost(3))
+    console.log("Ответ:  " + rentalCarCost(5))
+    console.log("Ответ:  " + rentalCarCost(7))
+</script>
+</body>
+</html>
