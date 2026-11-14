@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--
+Given a string, you have to return a string in which each character (case-sensitive) is repeated once.
+
+Examples (Input -> Output):
+* "String"      -> "SSttrriinngg"
+* "Hello World" -> "HHeelllloo  WWoorrlldd"
+* "1234!_ "     -> "11223344!!__  "
+
+---------------------
+
+Дана строка; необходимо вернуть строку, в которой каждый символ (с учётом регистра) повторяется один раз.
+
+Примеры (Входные данные -> Результат):
+* "String"      -> "SSttrriinngg"
+* "Hello World" -> "HHeelllloo  WWoorrlldd"
+* "1234!_ "     -> "11223344!!__  "
+-->
+<script>
+
+    const doubleChar = (str) => {
+        return str.split('').map( s => s + s).join('')
+    }
+
+    console.log("Ответ:  " + doubleChar("abcd"))
+    console.log("Ответ:  " + doubleChar("Adidas"))
+    console.log("Ответ:  " + doubleChar("1337"))
+    console.log("Ответ:  " + doubleChar("illuminati"))
+    console.log("Ответ:  " + doubleChar("123456"))
+    console.log(JSON.stringify("Ответ:  " +doubleChar("%^&*(")))
+</script>
+</body>
+</html>
